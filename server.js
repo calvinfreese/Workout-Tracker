@@ -8,11 +8,14 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+// must include public ..or else! it won't work.
 app.use(express.static("public"));
 
-
+// Connection line to our mongodb database
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutsdb", { useNewUrlParser: true });
 
+// require in api and html routing
 app.use(require("./routes/api-routes.js"));
 require("./routes/html-routes.js")(app);
 
