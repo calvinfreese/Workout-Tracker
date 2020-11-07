@@ -13,7 +13,16 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connection line to our mongodb database
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutsdb", { useNewUrlParser: true });
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/workoutsdb",
+ { 
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+
+ }
+);
 
 // require in api and html routing
 app.use(require("./routes/api-routes.js"));
