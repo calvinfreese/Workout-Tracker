@@ -36,16 +36,16 @@ Use this app to add, track, and complete exercises. Exercises are stored in a mo
 
 ## Screenshots
 #### Workout-Tracker
-![Tour](./assets/imgs/viewAll.gif)
+![Tour](./public/assets/imgs/viewAll.gif)
 
 #### Home
-![Home](./assets/imgs/home.png)
+![Home](./public/assets/imgs/home.png)
 
 #### Add
-![Add Workout](./assets/imgs/resistance.png)
+![Add Workout](./public/assets/imgs/resistance.png)
 
 #### Dashboard
-![Dashboard](./assets/imgs/dashboard.png)
+![Dashboard](./public/assets/imgs/dashboard.png)
 
 ## Credits
 This assignment was provided by Trilogy Education Services. Front-end code was provided by Trilogy Education Services. Back-end Code was developed based on in class activities and lectures, [MDN](https://developer.mozilla.org/en-US/) Reference Documents for JavaScript syntax, [JSHint](https://jshint.com/) for JavaScript validation, [mongoose.js](https://mongoosejs.com/) and [MongoDB](https://docs.mongodb.com/manual/introduction/) for reference documentation and examples, and various other online resources. 
